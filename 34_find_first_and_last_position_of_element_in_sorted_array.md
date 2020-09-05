@@ -31,7 +31,18 @@
 > - `nums` is a non decreasing array.
 > - `-10^9 <= target <= 10^9`
 
-## BinarySearch - O(log(n) + k) 
+## BinarySearch with equal_range (Gab's solution) - O(log(n)) - Know your STL!
+
+```cpp
+vector<int> searchRange(vector<int>& nums, int target) {
+    auto [lower, upper] = equal_range(nums.cbegin(), nums.cend(), target);
+    if (lower != nums.cend() && *lower == target)
+        return {int(lower - nums.cbegin()), int(upper - nums.cbegin() - 1)};
+    return {-1, -1};
+}
+```
+
+## BinarySearch with lower_bound O(log(n)) 
 
 For some reason, this is not achieving better results than solution 2
 
