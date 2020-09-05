@@ -11,6 +11,8 @@ Number | Problem
 9 | [palindrome number](9_palindrome_number.md)
 11 | [container with most water](11_container_with_most_water.md)
 12 | [integer to roman](12_integer_to_roman.md)
+13 | [roman to integer](13_roman_to_integer.md)
+14 | [longest common prefix](14_longest_common_prefix.md)
 21 | [merge two sorted lists](21_merge_two_sorted_lists.md)
 24 | [swap nodes in pairs](24_swap_nodes_in_pairs.md)
 50 | [powx n](50_powx_n.md)
@@ -26,3 +28,4 @@ Number | Problem
 700 | [search in a binary search tree](700_search_in_a_binary_search_tree.md)
 763 | [partition labels](763_partition_labels.md)
 779 | [k th symbol in grammar](779_k_th_symbol_in_grammar.md)
+1305 | [all elements in two binary search trees](1305_all_elements_in_two_binary_search_trees.md)
