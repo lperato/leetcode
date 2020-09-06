@@ -44,6 +44,51 @@
 > - `lists[i]` is sorted in **ascending order**.
 > - The sum of `lists[i].length` won't exceed `10^4`.
 
+## Merge all lists at same time (recursive version)
+
+```cpp
+// 05/09/2020
+static constexpr auto cmp = [](const ListNode* a, const ListNode *b){return a->val > b->val;};
+using Queue = priority_queue<ListNode *, vector<ListNode *>, decltype(cmp)>;
+ListNode* mergeKLists(vector<ListNode*>& lists) {
+    Queue queue(cmp);
+    for(auto l: lists) if(l) queue.push(l);
+    return merge_k_lists(queue);
+}
+
+ListNode* merge_k_lists(Queue& queue){
+    if(queue.empty()) return nullptr;
+    auto root = queue.top();
+    queue.pop();
+    if(root->next)
+        queue.push(root->next);
+    root->next = merge_k_lists(queue);
+    return root;
+}
+```
+## Merge all lists at same time (iterative version) [Gab's solution]
+
+```cpp
+ListNode* mergeKLists(vector<ListNode*>& lists) {
+    auto cmp = [](auto& n1, auto& n2){ return n1->val > n2->val; };
+    priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> nodes(cmp);
+    for (auto& list : lists)
+        if (list) 
+            nodes.push(list);
+    if (nodes.empty())
+        return nullptr;
+    ListNode* merged = nodes.top(), *last = nullptr;
+    while (! nodes.empty()) {
+        last = last ? last->next = nodes.top() : nodes.top();
+        nodes.pop();
+        if (last->next)
+            nodes.push(last->next);
+    }
+    last->next = nullptr;
+    return merged;
+}
+```
+
 ## Solution with recursive merge of  2 sorted lists
 
 ```cpp
