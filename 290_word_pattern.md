@@ -67,29 +67,29 @@ bool wordPattern(string pattern, string str) {
 ## Solution 2
 
 ```cpp
-    // 07/07/2020
-    bool wordPattern(string pattern, string str) {
-        array<string_view, 'z'+1> c_to_str;
-        unordered_map<string_view, char> str_to_c;
-        auto size = str.size();
-        size_t start = 0; while(str[start] == ' ') start++;
-        for(auto c: pattern){
-            if(start >= size) return false;
-            size_t pos = str.find(' ', start);
-            pos = (pos==string::npos)?size:pos;
-            string_view s(str.data()+start, pos - start);
-            if(c_to_str[c].empty())
-                c_to_str[c] = s;
-            else if(c_to_str[c] != s) 
-                return false;
-            if(auto it = str_to_c.find(s); it == str_to_c.end())
-                str_to_c.insert({s, c});
-            else if(it->second != c) 
-                return false;
-            start = pos + 1;
-        }
-        return start == size+1;
+// 07/07/2020
+bool wordPattern(string pattern, string str) {
+    array<string_view, 'z'+1> c_to_str;
+    unordered_map<string_view, char> str_to_c;
+    auto size = str.size();
+    size_t start = 0; while(str[start] == ' ') start++;
+    for(auto c: pattern){
+        if(start >= size) return false;
+        size_t pos = str.find(' ', start);
+        pos = (pos==string::npos)?size:pos;
+        string_view s(str.data()+start, pos - start);
+        if(c_to_str[c].empty())
+            c_to_str[c] = s;
+        else if(c_to_str[c] != s) 
+            return false;
+        if(auto it = str_to_c.find(s); it == str_to_c.end())
+            str_to_c.insert({s, c});
+        else if(it->second != c) 
+            return false;
+        start = pos + 1;
     }
+    return start == size+1;
+}
 ```
 
 ## Gab's solution
