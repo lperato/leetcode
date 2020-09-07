@@ -24,9 +24,7 @@ public:
         dsc_diags[r-c+size()] = place;
     }
     bool check(int r, int c) const {
-        return !rows[r]
-            && !asc_diags[r+c]
-            && !dsc_diags[r-c+n];
+        return !rows[r] && !asc_diags[r+c] && !dsc_diags[r-c+n];
     }
     inline int size() const {return n;}
 };
