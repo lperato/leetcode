@@ -1,4 +1,5 @@
 # C++ Solutions to leetcode problems
+47 [leetcode problems](https://leetcode.com/problemset/all/) solved:
 Number | Problem 
 --- | --- 
 1 | [two sums](1_two_sums.md)
