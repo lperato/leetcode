@@ -16,7 +16,32 @@
 > ]
 > ```
 
-## Solution
+## Backtracking
+
+```cpp
+// 09/09/2020 - backtracking
+vector<string> generateParenthesis(int n){
+    vector<string> result;
+    string s;
+    generate_parenthesis_bt(result, s, n);
+    return result;
+}
+
+void generate_parenthesis_bt(vector<string>& result, string& s, int n, int level = 0){
+    if (n == 0) {result.push_back(s); return;}
+    if(level < n){
+        s.push_back('(');
+        generate_parenthesis_bt(result, s, n, level+1);
+        s.pop_back();
+    }
+    if(level >0){
+        s.push_back(')');
+        generate_parenthesis_bt(result, s, n-1, level-1);
+        s.pop_back(); 
+    }
+}
+```
+## Recursive solution / pseudo backtracking 
 
 ```cpp
 // 27/02/2020
