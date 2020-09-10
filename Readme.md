@@ -1,5 +1,5 @@
 # C++ Solutions to leetcode problems
-70 [leetcode problems](https://leetcode.com/problemset/all/) solutions:
+76 [leetcode problems](https://leetcode.com/problemset/all/) solutions:
 Number | Problem 
 --- | --- 
 1 | [two sums](1_two_sums.md)
@@ -35,6 +35,7 @@ Number | Problem
 38 | [count and say](38_count_and_say.md)
 42 | [trapping rain water](42_trapping_rain_water.md)
 43 | [multiply strings](43_multiply_strings.md)
+45 | [jump game ii](45_jump_game_ii.md)
 49 | [group anagrams](49_group_anagrams.md)
 50 | [powx n](50_powx_n.md)
 51 | [n queens](51_n_queens.md)
@@ -54,15 +55,20 @@ Number | Problem
 68 | [text justification](68_text_justification.md)
 69 | [sqrtx](69_sqrtx.md)
 70 | [climbing stairs](70_climbing_stairs.md)
+77 | [combinations](77_combinations.md)
 95 | [unique binary search trees ii](95_unique_binary_search_trees_ii.md)
+100 | [same tree](100_same_tree.md)
 104 | [maximum depth of binary tree](104_maximum_depth_of_binary_tree.md)
 119 | [pascal triangle ii](119_pascal_triangle_ii.md)
+131 | [palindrome partitioning](131_palindrome_partitioning.md)
 165 | [compare version numbers](165_compare_version_numbers.md)
 206 | [reverse linked list](206_reverse_linked_list.md)
 240 | [search a 2d matrix ii](240_search_a_2d_matrix_ii.md)
 290 | [word pattern](290_word_pattern.md)
+299 | [bulls and cows](299_bulls_and_cows.md)
 324 | [wiggle sort ii](324_wiggle_sort_ii.md)
 344 | [reverse string](344_reverse_string.md)
+416 | [partition equal subset sum](416_partition_equal_subset_sum.md)
 419 | [battleships in a board](419_battleships_in_a_board.md)
 459 | [repeated substring pattern](459_repeated_substring_pattern.md)
 509 | [fibonacci number](509_fibonacci_number.md)

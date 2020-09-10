@@ -20,7 +20,9 @@
 > 1. Version strings are composed of numeric strings separated by dots `.` and this numeric strings **may** have leading zeroes. 
 > 2. Version strings do not start or end with dots, and they will not be two consecutive dots.
 
-## initial solution
+## Recursive solutions
+
+### Initial solution
 
 ```cpp
 // 09/09/2020 - initial solution
@@ -50,7 +52,7 @@ int compare_version(const string& v1, const string& v2, int i=0, int j=0){
     else return compare_version(v1, v2, p1+1, p2+1);
 }
 ```
-## More compact solution
+### More compact solution with lambda
 
 ```cpp
 // 09/09/2020 - slightly more compact solution
@@ -71,4 +73,21 @@ int compare_version(const string& v1, const string& v2, int i=0, int j=0){
     else if(n1 < n2) return -1;
     else return compare_version(v1, v2, p1, p2);
 } 
+```
+
+## Convert version string to vector then compare vectors (Gab's solution)
+
+```cpp
+int compareVersion(const string& version1, const string& version2) {
+    auto vers1 = extract(version1), vers2 = extract(version2);
+    return (vers1 == vers2) ? 0 : (vers1 < vers2) ? -1 : 1;
+}
+
+static vector<int> extract(const string& s) {
+    istringstream iss(s);
+    vector<int> vers;
+    for (string v; getline(iss, v, '.'); vers.push_back(stoi(v)));
+    for (; !vers.empty() && vers.back() == 0; vers.pop_back());
+    return vers;
+}
 ```
