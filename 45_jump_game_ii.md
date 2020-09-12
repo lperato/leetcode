@@ -21,7 +21,7 @@
 >
 > You can assume that you can always reach the last index.
 
-## Solution: Dynamic Programing  + pruning
+## Solution: Dynamic Programing  + pruning - [O(n)  - O(n^2)]
 
 ```cpp
 // 10/09/2020
@@ -36,6 +36,23 @@ int jump(vector<int>& nums) {
         maxreach = i + nums[i];
     }
     return dp[nums.size()-1];
+}
+```
+
+## Gab's solution - O(n)
+
+```cpp
+int jump(vector<int>& nums) {
+    if (nums.size() <= 2) return nums.size() - 1;
+    int dist = nums[0], max_dist = nums[0], jumps = 1;
+    for (int i = 1; i != nums.size() - 1; ++i) {
+        max_dist = max(--max_dist, nums[i]);
+        if (--dist == 0) {
+            dist = max_dist;
+            ++jumps;
+        }
+    }
+    return jumps;
 }
 ```
 

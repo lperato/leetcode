@@ -1,6 +1,6 @@
 # C++ Solutions to leetcode problems
-76 [leetcode problems](https://leetcode.com/problemset/all/) solutions:
-Number | Problem 
+C++ solutions for 91 [leetcode problems](https://leetcode.com/problemset/all/) :
+ \# | Problem 
 --- | --- 
 1 | [two sums](1_two_sums.md)
 2 | [add two numbers](2_add_two_numbers.md)
@@ -15,7 +15,9 @@ Number | Problem
 13 | [roman to integer](13_roman_to_integer.md)
 14 | [longest common prefix](14_longest_common_prefix.md)
 15 | [3sum](15_3sum.md)
+16 | [3sum closest](16_3sum_closest.md)
 17 | [letter combinations of a phone number](17_letter_combinations_of_a_phone_number.md)
+18 | [4sum](18_4sum.md)
 19 | [remove nth node from end of list](19_remove_nth_node_from_end_of_list.md)
 20 | [valid parentheses](20_valid_parentheses.md)
 21 | [merge two sorted lists](21_merge_two_sorted_lists.md)
@@ -55,14 +57,27 @@ Number | Problem
 68 | [text justification](68_text_justification.md)
 69 | [sqrtx](69_sqrtx.md)
 70 | [climbing stairs](70_climbing_stairs.md)
+71 | [simplify path](71_simplify_path.md)
+72 | [edit distance](72_edit_distance.md)
+73 | [set matrix zeroes](73_set_matrix_zeroes.md)
+74 | [search a 2d matrix](74_search_a_2d_matrix.md)
+75 | [sort colors](75_sort_colors.md)
 77 | [combinations](77_combinations.md)
+78 | [subsets](78_subsets.md)
+79 | [word search](79_word_search.md)
+80 | [remove duplicates from sorted array ii](80_remove_duplicates_from_sorted_array_ii.md)
+82 | [remove duplicates from sorted list ii](82_remove_duplicates_from_sorted_list_ii.md)
+83 | [remove duplicates from sorted list](83_remove_duplicates_from_sorted_list.md)
+84 | [largest rectangle in histogram](84_largest_rectangle_in_histogram.md)
 95 | [unique binary search trees ii](95_unique_binary_search_trees_ii.md)
 100 | [same tree](100_same_tree.md)
 104 | [maximum depth of binary tree](104_maximum_depth_of_binary_tree.md)
 119 | [pascal triangle ii](119_pascal_triangle_ii.md)
 131 | [palindrome partitioning](131_palindrome_partitioning.md)
+152 | [maximum product subarray](152_maximum_product_subarray.md)
 165 | [compare version numbers](165_compare_version_numbers.md)
 206 | [reverse linked list](206_reverse_linked_list.md)
+216 | [combination sum iii](216_combination_sum_iii.md)
 240 | [search a 2d matrix ii](240_search_a_2d_matrix_ii.md)
 290 | [word pattern](290_word_pattern.md)
 299 | [bulls and cows](299_bulls_and_cows.md)

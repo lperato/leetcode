@@ -22,8 +22,8 @@ def make_files_list(path):
 def render_to_md(rows, output_file="Readme.md"):
     f = open(output_file, "w")
     f.write("# C++ Solutions to leetcode problems\n")
-    f.write(f"{len(rows)} [leetcode problems](https://leetcode.com/problemset/all/) solutions:\n")
-    f.write("Number | Problem " + "\n")
+    f.write(f"C++ solutions for {len(rows)} [leetcode problems](https://leetcode.com/problemset/all/) :\n")
+    f.write(" \# | Problem " + "\n")
     f.write("--- | --- " + "\n")
     for num, title, file in rows:
         f.write(f"{num} | [{title}]({file})" + "\n")
