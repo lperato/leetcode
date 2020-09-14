@@ -1,5 +1,5 @@
 # C++ Solutions to leetcode problems
-C++ solutions for 92 [leetcode problems](https://leetcode.com/problemset/all/) :
+C++ solutions for 100 [leetcode problems](https://leetcode.com/problemset/all/) :
  \# | Problem 
 --- | --- 
 1 | [two sums](1_two_sums.md)
@@ -35,9 +35,12 @@ C++ solutions for 92 [leetcode problems](https://leetcode.com/problemset/all/) :
 36 | [valid sudoku](36_valid_sudoku.md)
 37 | [sudoku solver](37_sudoku_solver.md)
 38 | [count and say](38_count_and_say.md)
+39 | [combination sum](39_combination_sum.md)
+40 | [combination sum ii](40_combination_sum_ii.md)
 42 | [trapping rain water](42_trapping_rain_water.md)
 43 | [multiply strings](43_multiply_strings.md)
 45 | [jump game ii](45_jump_game_ii.md)
+46 | [permutations](46_permutations.md)
 49 | [group anagrams](49_group_anagrams.md)
 50 | [powx n](50_powx_n.md)
 51 | [n queens](51_n_queens.md)
@@ -45,6 +48,7 @@ C++ solutions for 92 [leetcode problems](https://leetcode.com/problemset/all/) :
 53 | [maximum subarray](53_maximum_subarray.md)
 55 | [jump game](55_jump_game.md)
 56 | [merge intervals](56_merge_intervals.md)
+57 | [insert interval](57_insert_interval.md)
 58 | [length of last word](58_length_of_last_word.md)
 59 | [spiral matrix ii](59_spiral_matrix_ii.md)
 60 | [permutation sequence](60_permutation_sequence.md)
@@ -76,7 +80,10 @@ C++ solutions for 92 [leetcode problems](https://leetcode.com/problemset/all/) :
 131 | [palindrome partitioning](131_palindrome_partitioning.md)
 152 | [maximum product subarray](152_maximum_product_subarray.md)
 165 | [compare version numbers](165_compare_version_numbers.md)
+188 | [best time to buy and sell stock iv](188_best_time_to_buy_and_sell_stock_iv.md)
+198 | [house robber](198_house_robber.md)
 206 | [reverse linked list](206_reverse_linked_list.md)
+213 | [house robber ii](213_house_robber_ii.md)
 216 | [combination sum iii](216_combination_sum_iii.md)
 240 | [search a 2d matrix ii](240_search_a_2d_matrix_ii.md)
 290 | [word pattern](290_word_pattern.md)
@@ -89,6 +96,7 @@ C++ solutions for 92 [leetcode problems](https://leetcode.com/problemset/all/) :
 459 | [repeated substring pattern](459_repeated_substring_pattern.md)
 509 | [fibonacci number](509_fibonacci_number.md)
 700 | [search in a binary search tree](700_search_in_a_binary_search_tree.md)
+714 | [best time to buy and sell stock with transaction-fee](714_best_time_to_buy_and_sell_stock_with_transaction-fee.md)
 763 | [partition labels](763_partition_labels.md)
 779 | [k th symbol in grammar](779_k_th_symbol_in_grammar.md)
 835 | [image overlap](835_image_overlap.md)
