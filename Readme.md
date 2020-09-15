@@ -1,5 +1,5 @@
 # C++ Solutions to leetcode problems
-C++ solutions for 100 [leetcode problems](https://leetcode.com/problemset/all/) :
+C++ solutions for 103 [leetcode problems](https://leetcode.com/problemset/all/) :
  \# | Problem 
 --- | --- 
 1 | [two sums](1_two_sums.md)
@@ -73,11 +73,13 @@ C++ solutions for 100 [leetcode problems](https://leetcode.com/problemset/all/) 
 82 | [remove duplicates from sorted list ii](82_remove_duplicates_from_sorted_list_ii.md)
 83 | [remove duplicates from sorted list](83_remove_duplicates_from_sorted_list.md)
 84 | [largest rectangle in histogram](84_largest_rectangle_in_histogram.md)
+94 | [binary tree inorder traversal](94_binary_tree_inorder_traversal.md)
 95 | [unique binary search trees ii](95_unique_binary_search_trees_ii.md)
 100 | [same tree](100_same_tree.md)
 104 | [maximum depth of binary tree](104_maximum_depth_of_binary_tree.md)
 119 | [pascal triangle ii](119_pascal_triangle_ii.md)
 131 | [palindrome partitioning](131_palindrome_partitioning.md)
+144 | [binary tree preorder traversal](144_binary_tree_preorder_traversal.md)
 152 | [maximum product subarray](152_maximum_product_subarray.md)
 165 | [compare version numbers](165_compare_version_numbers.md)
 188 | [best time to buy and sell stock iv](188_best_time_to_buy_and_sell_stock_iv.md)
@@ -101,4 +103,5 @@ C++ solutions for 100 [leetcode problems](https://leetcode.com/problemset/all/) 
 779 | [k th symbol in grammar](779_k_th_symbol_in_grammar.md)
 835 | [image overlap](835_image_overlap.md)
 1022 | [sum of root to leaf binary numbers](1022_sum_of_root_to_leaf_binary_numbers.md)
+1227 | [airplane seat assignment probability](1227_airplane_seat_assignment_probability.md)
 1305 | [all elements in two binary search trees](1305_all_elements_in_two_binary_search_trees.md)
