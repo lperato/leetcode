@@ -15,7 +15,25 @@
 > Output: 5
 > ```
 
-## Solution
+## Solution 1 - STL
+
+```cpp
+// 15/09/2020
+int lengthOfLastWord(string s) {
+    auto it = find_if_not(s.rbegin(), s.rend(), ::isspace);
+    return find_if(it, s.rend(), ::isspace) - it;
+}
+```
+## Solution 2 - STL without `::isspace`
+
+```cpp
+// 15/09/2020
+int lengthOfLastWord(string s) {
+    auto it = find_if(s.rbegin(), s.rend(), [](char c){return c != ' ';});
+    return find(it, s.rend(), ' ') - it;
+}
+```
+## Solution 3 - without STL (meh)
 
 ```cpp
 // 07/03/2020
