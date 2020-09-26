@@ -12,17 +12,20 @@
 
 ## Iterative solution O(1) time (using bit shifting)
 
+n = bit[0] * 2^0 + bit[1] * 2^1 + ... +bit[31] * 2 ^ 31
+x ^ n = x ^ (bit[0] * 2^0) * x ^ (bit[1] * 2 ^ 1) * ... * x ^ (bit[30] * 2 ^ 30)
+x ^ n = b0?x^1:1 * b1?x^2:1 * ... b31?x ^ 2 ^ 31
+
 ```cpp
 // iterative solution O(1) time
 double myPow(double x, int n) {
-    double res = 1.0;
-    bool neg = n<0;
-    n = abs(n);
-    for(int shift = 0; shift<32; shift++){
-        res = (n & (1 << shift))?res*x:res;
-        x*=x;
+    double pwr = 1.0;
+    int N = abs(n);
+    for(int b=0; b != 32; ++b){
+        pwr *= (N & (1 << b))?x:1;
+        x *= x;
     }
-    return neg?1.0/res:res;
+    return n < 0?1.0/pwr:pwr;
 }
 ```
 ## Recursion - O(n) (Fail TLE & stack overflow)
