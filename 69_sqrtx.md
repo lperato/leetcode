@@ -34,9 +34,25 @@ int mySqrt(int x) {
     return i-1;
 }
 ```
-## Solution 2 : a bit better (?)
+## Solution 2 : binary search
 
-**TODO** rework that solution
+```cpp
+// 18/09/2020
+int mySqrt(int x) {
+    int l = 0, r = x/2+1;
+    while(l<r){
+        int mid = l + (r-l)/2;
+        if(int64_t mid2 = (int64_t)mid * mid; mid2 < x)
+            l = mid+1;
+        else if(mid2 > x)
+            r = mid;
+        else
+            return mid;
+    }
+    return (int64_t)l*l>x?l-1:l;
+}
+```
+
 
 ```cpp
 // 24/05/2020
