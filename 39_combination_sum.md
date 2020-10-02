@@ -41,9 +41,10 @@
 > - Each element of `candidate` is unique.
 > - `1 <= target <= 500`
 
-## Backtracking 
+## Backtracking (basic) 
 
 ```cpp
+// 13/09/2020
 vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
     vector<vector<int>> result;
     vector<int> comb;
@@ -64,5 +65,32 @@ void combination_sum_bt(const vector<int>& candidates,
         combination_sum_bt(candidates, result, comb, target - candidates[i], i);
         comb.pop_back();
     }
+}
+```
+
+## Backtracking with sorting of candidates first
+
+```cpp
+// 02/10/2020
+vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+    sort(candidates.begin(), candidates.end());
+    vector<vector<int>> combinations;
+    vector<int> cmb;
+    combination_sum_bt(candidates, combinations, cmb, target);
+    return combinations;
+}
+
+void combination_sum_bt(const vector<int>& candidates, 
+                        vector<vector<int>>& combinations, 
+                        vector<int>& cmb, int target, int start=0){
+    if(target == 0)
+        combinations.push_back(cmb);
+    else {
+        for(int i=start, size=candidates.size(); i != size && candidates[i] <= target; ++i){
+            cmb.push_back(candidates[i]);
+            combination_sum_bt(candidates, combinations, cmb, target - candidates[i], i);
+            cmb.pop_back();
+        }
+    } 
 }
 ```
